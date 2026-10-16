@@ -21,6 +21,11 @@ class admin_plugin_pagehealth extends AdminPlugin
         return 950;
     }
 
+    public function getMenuIcon()
+    {
+        return __DIR__ . '/admin.svg';
+    }
+
     public function getMenuText($language)
     {
         return $this->getLang('menu');
