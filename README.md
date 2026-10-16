@@ -12,7 +12,8 @@ progress, counts, and a list of no-content pages. The server stores
 classifications in one cache index and reads/classifies source only for IDs
 that are not in that index during the initial scan. Successful page saves
 refresh the saved classification. Unreadable pages are left with the normal
-appearance.
+appearance. Links with `rel="tag"` are skipped because the Tag plugin renders
+tag views as virtual links rather than wiki pages.
 
 The admin-triggered scan processes a bounded batch per request and resumes if
 interrupted. Later views read the saved index instead of reopening each page

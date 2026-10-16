@@ -70,6 +70,9 @@ function pagehealthInit() {
 
         const newIds = [];
         for (const link of links) {
+            // Tag plugin pages are virtual endpoints (for example ?do=showtag),
+            // not wiki pages whose content Page Health should classify.
+            if (link.relList.contains('tag')) continue;
             const id = pageIdFromLink(link);
             if (!id) continue;
             if (!targets.has(id)) targets.set(id, new Set());
