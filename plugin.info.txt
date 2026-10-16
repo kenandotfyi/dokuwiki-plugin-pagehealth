@@ -3,5 +3,5 @@ author Kenan Akinci
 email  hey@kenan.fyi
 date   2026-10-05
 name   Page Health
-desc   Finds blank or heading-only pages, styles their links, and shows summary counts.
+desc   Finds blank pages, styles their links, shows health counts, and lists recent changes.
 url    https://www.dokuwiki.org/plugin:pagehealth

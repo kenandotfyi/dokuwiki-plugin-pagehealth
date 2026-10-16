@@ -1,8 +1,8 @@
 # Page Health
 
-This local DokuWiki action plugin fades internal page links when the target
-page has no body content outside headings. It does not modify the `nspages`
-plugin.
+This local DokuWiki plugin fades internal page links when the target page has
+no body content outside headings. It also provides page-health counts and a
+recent-changes list. It does not modify the `nspages` plugin.
 
 The browser collects existing internal page links from each rendered page and
 submits their IDs in batches of up to 500. The **Admin → Page Health** page can
@@ -34,6 +34,10 @@ Use `~~PAGEHEALTH~~` in a wiki page to display the current healthy and
 no-content page counts. Until the admin full scan completes, the syntax labels
 its figures as partial results. Counts include only pages the current reader
 can access.
+
+Use `~~LAST30~~` to show the latest 30 page changes, including the change type,
+page name, edit comment, timestamp, and links to the diff and revision history.
+In the Fokus template, the list uses its compact row styling and duotone icons.
 
 To enable it, refresh the plugin list in DokuWiki's Extension Manager and
 enable **Page Health** if it is not enabled automatically. Its cache is stored
