@@ -103,7 +103,7 @@ class syntax_plugin_pagehealth extends DokuWiki_Syntax_Plugin
         switch ($type) {
             case DOKU_CHANGE_TYPE_CREATE: return 'Created';
             case DOKU_CHANGE_TYPE_DELETE: return 'Deleted';
-            case DOKU_CHANGE_TYPE_MINOR_EDIT: return 'Minor edit';
+            case DOKU_CHANGE_TYPE_MINOR_EDIT: return 'Minor';
             case DOKU_CHANGE_TYPE_REVERT: return 'Reverted';
             default: return 'Edited';
         }
